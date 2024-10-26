@@ -1,0 +1,61 @@
+<html>
+<head>
+    <title> Bookstore </title>
+    
+</head>
+<body>
+	<table>
+		<tr><th>ITEM</th><th>QUANTITY</th><th>AMOUNT</th></tr>
+		<tr><td>Candy</td><td id='candycountt'></td><td id='ctotalt'></td><td>$</td></tr>
+		<tr><td>Stationary</td><td id='statcountt'></td><td id='stotalt'></td><td>$</td></tr>
+		<tr><td>Fries</td><td id='friescountt'></td><td id='ftotalt'></td><td>$</td></tr>
+		<tr><td>Others</td><td id='otherscountt'></td><td id='ototalt'></td><td>$</td></tr>
+		<tr><td>TOTAL</td><td id='itemst'></td><td id='totalt'></td><td>$</td></tr> 
+	</table>
+	<script language='Javascript'>
+        var items=parseInt(window.prompt('How many items?',''));
+        var candycount=0;
+        var statcount=0;
+        
+        for (var count=1;count<=items;count++)
+	    {
+            item=window.prompt('Enter item','');
+                    if(item=='candy'){
+                        candycount=candycount+1;
+                        ctotal=ctotal+50;}
+                    if(item=='stationary'){
+                        statcount=statcount+1;
+                        stotal=stotal+500;} 
+                    if(item=='fries'){
+                        friescount=friescount+1;
+                        ftotal=ftotal+600}
+                    if(item=='others'){
+                        otherscount=otherscount+1;
+                        ototal=ototal+700;}
+
+        } 
+        total=ctotal+ftotal+ototal+stotal;
+        var one=document.getElementById('candycountt');
+		one.innerHTML = candycount;
+        var one1=document.getElementById('ctotalt');
+		one1.innerHTML = ctotal;
+        var two=document.getElementById('statcountt');
+		two.innerHTML = statcount;
+        var two2=document.getElementById('stotalt');
+		two2.innerHTML = stotal;
+        var three=document.getElementById('friescountt');
+		three.innerHTML = friescount;
+        var three3=document.getElementById('ftotalt');
+		three3.innerHTML = ftotal;
+        var four=document.getElementById('otherscountt');
+		four.innerHTML = otherscount;
+        var four4=document.getElementById('ototalt');
+		four4.innerHTML = ototal;
+        var five=document.getElementById('itemst');
+		five.innerHTML = items;
+        var six=document.getElementById('totalt'); 
+		six.innerHTML = total;
+
+    </script>
+</body>
+</html>

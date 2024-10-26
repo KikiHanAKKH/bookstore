@@ -11,10 +11,6 @@
 			</thead>
 			<tbody>
 			<tr><td style="width:250px">Monday</td><td style="width:250px">6</td></tr>
-			<tr><td style="width:250px">Wednesday</td><td style="width:250px">8</td></tr>
-			<tr><td style="width:250px">Thursday</td><td style="width:250px">7</td></tr>
-			<tr><td style="width:250px">Friday</td><td style="width:250px">3.5</td></tr>
-			<tr><td style="width:250px">Saturday</td><td style="width:250px">5</td></tr>
 			<tr><td style="width:250px">Sunday</td><td style="width:250px">6</td></tr>
 			</tbody>
 			<tfoot>
